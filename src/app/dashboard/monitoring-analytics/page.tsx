@@ -20,7 +20,7 @@ export default function MonitoringAnalyticsPage() {
           <div className="text-sm font-medium" style={{ color: 'var(--secondary)' }}>Risk Alerts</div>
           <ul className="mt-2 list-disc pl-5 text-sm" style={{ color: 'var(--secondary)' }}>
             <li>3 companies at risk of label expiry</li>
-            <li>12 companies haven't updated data in 90+ days</li>
+            <li>12 companies haven&apos;t updated data in 90+ days</li>
             <li>5 sectors below national targets</li>
           </ul>
         </div>

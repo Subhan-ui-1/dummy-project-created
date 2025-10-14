@@ -88,7 +88,7 @@ export default function AdvisorManagementPage() {
       <div className="rounded-xl border bg-white shadow-sm p-5" style={{ borderColor: "var(--fifth)" }}>
         <div className="grid md:grid-cols-3 gap-3">
           <input value={query} onChange={(e) => setQuery(e.target.value)} className="rounded border px-3 py-2" style={{ borderColor: "var(--fifth)" }} placeholder="Search name or specialty" />
-          <select value={filter} onChange={(e) => setFilter(e.target.value as any)} className="rounded border px-3 py-2" style={{ borderColor: "var(--fifth)" }}>
+          <select value={filter} onChange={(e) => setFilter(e.target.value as "all" | "active" | "pending" | "rejected")} className="rounded border px-3 py-2" style={{ borderColor: "var(--fifth)" }}>
             <option value="all">All statuses</option>
             <option value="active">Active</option>
             <option value="pending">Pending</option>

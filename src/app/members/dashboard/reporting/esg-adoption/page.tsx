@@ -42,7 +42,7 @@ export default function ESGAdoptionReportPage() {
           <div className="text-sm font-medium" style={{ color: 'var(--secondary)' }}>AI-powered Insights</div>
           <ul className="mt-2 list-disc pl-5 text-sm" style={{ color: 'var(--secondary)' }}>
             <li>Manufacturing shows the strongest adoption growth (+15% QoQ)</li>
-            <li>Social pillar lags behind E&G across most sectors</li>
+            <li>Social pillar lags behind E&amp;G across most sectors</li>
             <li>78% of companies struggle with Scope 3 tracking</li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ export default function ESGAdoptionReportPage() {
           <div className="text-sm font-medium" style={{ color: 'var(--secondary)' }}>Risk Alerts</div>
           <ul className="mt-2 list-disc pl-5 text-sm" style={{ color: 'var(--secondary)' }}>
             <li>3 companies at risk of label expiry</li>
-            <li>12 companies haven't updated data in 90+ days</li>
+            <li>12 companies haven&apos;t updated data in 90+ days</li>
             <li>5 sectors below national targets</li>
           </ul>
         </div>

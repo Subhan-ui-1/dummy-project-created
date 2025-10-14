@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const modules = [
   '1. Introduction to Carbon',
@@ -51,7 +52,7 @@ export default function CourseContentPage() {
           <div className="space-y-3 text-sm" style={{ color: 'var(--secondary)' }}>
             <div className="font-medium">Module Summary</div>
             <p>
-              Scope 3 emissions are indirect emissions occurring across your value chain and are often the largest share of a company's carbon footprint.
+              Scope 3 emissions are indirect emissions occurring across your value chain and are often the largest share of a company&apos;s carbon footprint.
             </p>
             <div className="text-xs" style={{ color: 'var(--fourth)' }}>Key Topics Covered:</div>
             <ul className="list-disc pl-5 space-y-1">
@@ -82,13 +83,13 @@ export default function CourseContentPage() {
         {/* Right - course image */}
         <aside className="rounded-lg border bg-white p-4 h-fit" style={{ borderColor: 'var(--fifth)' }}>
           <div className="text-sm font-medium" style={{ color: 'var(--secondary)' }}>Course Visual</div>
-          <img
+          <Image
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Online_learning.jpg/320px-Online_learning.jpg"
             alt="Course illustration"
-            className="mt-3 rounded-md border"
-            style={{ borderColor: 'var(--fifth)' }}
             width={280}
             height={180}
+            className="mt-3 rounded-md border"
+            style={{ borderColor: 'var(--fifth)' }}
           />
           <div className="mt-2 text-[11px]" style={{ color: 'var(--fourth)' }}>Illustrative image for learning content (replace with brand asset anytime).</div>
         </aside>
