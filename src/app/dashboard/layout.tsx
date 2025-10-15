@@ -37,7 +37,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
       <main className="bg-white">
         <header className="h-16 border-b border-[color:var(--fifth)]/30 flex items-center justify-between px-6">
           <h1 className="text-base font-medium" style={{ color: "var(--fourth)" }}>
-            Chamber Demo
+            Admin
           </h1>
           <div className="flex items-center gap-3">
           <div className="flex items-center gap-3">

@@ -59,7 +59,8 @@ const navItems = [
     label: "Reports",
   },
   {
-    href: "/members/dashboard/double-materiality",
+    href: "https://staging-branch-khazraai-frontend-production.up.railway.app/dashboard",
+    // href: "/members/dashboard/double-materiality",
     label: "Double Materiality",
   },
   // {
@@ -77,12 +78,12 @@ export default function MembersDashboardLayout({
     <div className="min-h-screen grid grid-cols-[260px_1fr]">
       <aside className="bg-secondary text-white">
         <div className="h-16 flex items-center px-6 border-b border-[color:var(--fifth)]/30">
-          <span
+          {/* <span
             className="text-lg font-semibold"
             style={{ color: "var(--primary)" }}
           >
             Members
-          </span>
+          </span> */}
         </div>
         <SidebarNav items={navItems} />
       </aside>
