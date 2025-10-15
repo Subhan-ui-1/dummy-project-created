@@ -10,7 +10,7 @@ export default function KnowledgeHubPage() {
         className="text-lg font-semibold"
         style={{ color: "var(--secondary)" }}
       >
-        MODULE 5: Knowledge Hub & Training System
+        Knowledge Hub & Training System
       </div>
       <div className="grid gap-6">
         <div
@@ -26,7 +26,10 @@ export default function KnowledgeHubPage() {
               <div
                 key={k.label}
                 className="rounded border p-3"
-                style={{ borderColor: "var(--fifth)" }}
+                style={{ borderColor: "var(--fifth)",
+                  backgroundColor: "var(--primary)",
+                  
+                 }}
               >
                 <div className="text-xs" style={{ color: "var(--fourth)" }}>
                   {k.label}
@@ -64,8 +67,9 @@ export default function KnowledgeHubPage() {
                 key={c}
                 className="rounded border p-3 flex items-center justify-between"
                 style={{
-                  borderColor: "var(--fifth)",
-                  color: "var(--secondary)",
+                  borderColor: "var(--primary)",
+                  color: "white",
+                  backgroundColor: "var(--secondary)",
                 }}
               >
                 <div>{c}</div>
@@ -74,6 +78,7 @@ export default function KnowledgeHubPage() {
                   style={{
                     borderColor: "var(--primary)",
                     color: "var(--secondary)",
+                    backgroundColor: "var(--primary)",
                   }}
                   onClick={() =>
                     router.push("/members/dashboard/course-content")
@@ -108,8 +113,9 @@ export default function KnowledgeHubPage() {
                 key={r}
                 className="rounded border p-3 flex items-center justify-between"
                 style={{
-                  borderColor: "var(--fifth)",
-                  color: "var(--secondary)",
+                  borderColor: "var(--primary)",
+                  color: "white",
+                  backgroundColor: "var(--secondary)",
                 }}
               >
                 <span>{r}</span>
@@ -118,6 +124,7 @@ export default function KnowledgeHubPage() {
                   style={{
                     borderColor: "var(--primary)",
                     color: "var(--secondary)",
+                    backgroundColor: "var(--primary)",
                   }}
                 >
                   Download

@@ -30,7 +30,7 @@ export default function GreenFinanceConnectorPage() {
         className="text-lg font-semibold"
         style={{ color: "var(--secondary)" }}
       >
-        MODULE 7: Green Finance Connector
+        Green Finance Connector
       </div>
       <div className="grid gap-6 lg:grid-cols-1">
         <div

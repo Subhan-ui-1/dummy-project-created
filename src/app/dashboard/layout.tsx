@@ -40,9 +40,21 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
             Chamber Demo
           </h1>
           <div className="flex items-center gap-3">
-            <div className="h-8 px-3 rounded-md flex items-center" style={{ backgroundColor: "var(--primary)", color: "#161326" }}>
-              Primary
-            </div>
+          <div className="flex items-center gap-3">
+            <select
+              className="h-8 px-3 rounded-md text-sm"
+              defaultValue="en"
+              style={{
+                border: "1px solid",
+                borderColor: "var(--fifth)",
+                backgroundColor: "#FFFFFF",
+                color: "var(--secondary)",
+              }}
+            >
+              <option value="en">English</option>
+              <option value="ar">Arabic</option>
+            </select>
+          </div>
           </div>
         </header>
         <div className="p-6">

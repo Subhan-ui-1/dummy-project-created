@@ -3,20 +3,20 @@ import SidebarNav from "../../dashboard/SidebarNav";
 
 const navItems = [
   { href: "/members/dashboard/overview", label: "Dashboard" },
-  { href: "/members/dashboard/user-management", label: "User Management" },
+  // { href: "/members/dashboard/user-management", label: "User Management" },
   // { href: "/members/dashboard/content-management", label: "Content Managemnt" },
   { href: "/members/dashboard/analytics", label: "AI Analytics" },
-  // { href: "/members/dashboard/system-settings", label: "System Settings" },
-  {
-    href: "/members/dashboard/recognition-review",
-    label: "Recognition Review",
-  },
-  { href: "/members/dashboard/reports", label: "Reports" },
-  // { href: "/members/dashboard/audit-logs", label: "Autdit Logs" },
   {
     href: "/members/dashboard/esg-assessment",
     label: "ESG Assessment & Framework",
   },
+  // { href: "/members/dashboard/system-settings", label: "System Settings" },
+  // {
+  //   href: "/members/dashboard/recognition-review",
+  //   label: "Recognition Review",
+  // },
+  // { href: "/members/dashboard/reports", label: "Reports" },
+  // { href: "/members/dashboard/audit-logs", label: "Autdit Logs" },
   // { href: "/members/dashboard/esg-assessment/results", label: "ESG Results" },
   {
     href: "/members/dashboard/certificate-badge",
@@ -27,7 +27,7 @@ const navItems = [
     href: "/members/dashboard/green-finance",
     label: "Green Finance Connector",
   },
-  { href: "/members/dashboard/advisor-network", label: "Advisor Network" },
+  // { href: "/members/dashboard/advisor-network", label: "Advisor Network" },
   { href: "/members/dashboard/benchmarking", label: "Benchmarking Report" },
   { href: "/members/dashboard/knowledge-hub", label: "Knowledge Hub" },
   {
@@ -56,12 +56,16 @@ const navItems = [
   // },
   {
     href: "/members/dashboard/reporting/esg-adoption",
-    label: "Reporting: ESG Adoption",
+    label: "Reports",
   },
   {
-    href: "/members/dashboard/reporting/cop-benchmarking",
-    label: "Reporting: COP Benchmarking",
+    href: "/members/dashboard/double-materiality",
+    label: "Double Materiality",
   },
+  // {
+  //   href: "/members/dashboard/reporting/cop-benchmarking",
+  //   label: "Reporting: COP Benchmarking",
+  // },
 ];
 
 export default function MembersDashboardLayout({
@@ -91,12 +95,19 @@ export default function MembersDashboardLayout({
             Members Dashboard
           </h1>
           <div className="flex items-center gap-3">
-            <div
-              className="h-8 px-3 rounded-md flex items-center"
-              style={{ backgroundColor: "var(--primary)", color: "#161326" }}
+            <select
+              className="h-8 px-3 rounded-md text-sm"
+              defaultValue="en"
+              style={{
+                border: "1px solid",
+                borderColor: "var(--fifth)",
+                backgroundColor: "#FFFFFF",
+                color: "var(--secondary)",
+              }}
             >
-              Primary
-            </div>
+              <option value="en">English</option>
+              <option value="ar">Arabic</option>
+            </select>
           </div>
         </header>
         <div className="p-6">{children}</div>
